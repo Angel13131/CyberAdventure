@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Adventure - Tu Aventura Digital Segura</title>
+     <link rel="icon" href="images/cyberadventure.ico" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <!-- FIXED TREE MENU -->
+    <aside id="fixed-tree-menu">
+        <div class="tree-menu-header">
+            <h4>Navegación Rápida</h4>
+            <button class="btn btn-sm btn-close-menu d-lg-none"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="tree-menu-list">
+            <li class="tree-menu-item">
+                <a href="index.html" class="tree-menu-link">Inicio</a>
+            </li>
+            <li class="tree-menu-item has-submenu">
+                <a href="areas.html" class="tree-menu-link">Juega y Aprende <i class="fas fa-chevron-right tree-icon"></i></a>
+                <ul class="submenu">
+                    <li><a href="areas.html#areas-ciberseguridad" class="tree-menu-link">Ciberseguridad</a></li>
+                    <li><a href="areas.html#areas-pensamiento" class="tree-menu-link">Pensamiento Crítico</a></li>
+                    <li><a href="areas.html#areas-creatividad" class="tree-menu-link">Creatividad Digital</a></li>
+                    <li><a href="areas.html#areas-convivencia" class="tree-menu-link">Convivencia Digital</a></li>
+                </ul>
+            </li>
+            <li class="tree-menu-item">
+                <a href="novedades.html" class="tree-menu-link">Novedades y Retos</a>
+            </li>
+            <li class="tree-menu-item has-submenu">
+                <a href="transmedia.html" class="tree-menu-link">Explora más <i class="fas fa-chevron-right tree-icon"></i></a>
+                <ul class="submenu">
+                    <li><a href="transmedia.html#transmedia-video" class="tree-menu-link">Video Oficial</a></li>
+                    <li><a href="transmedia.html#transmedia-cuna-video" class="tree-menu-link">Cuña Radial (Video)</a></li>
+                    <li><a href="transmedia.html#transmedia-spot-publicitario" class="tree-menu-link">Spot Publicitario</a></li>
+                    <li><a href="transmedia.html#merchCarousel" class="tree-menu-link">Merchandising</a></li>
+                </ul>
+            </li>
+            <li class="tree-menu-item">
+                <a href="auth.html" class="tree-menu-link">Mi Cuenta</a>
+            </li>
+            <li class="tree-menu-item has-submenu">
+                <a href="contacto.html" class="tree-menu-link">Contáctanos <i class="fas fa-chevron-right tree-icon"></i></a>
+                <ul class="submenu">
+                    <li><a href="contacto.html#contacto-form" class="tree-menu-link">Formulario de Contacto</a></li>
+                    <li><a href="contacto.html#equipo" class="tree-menu-link">Nuestro Equipo</a></li>
+                </ul>
+            </li>
+            <li class="tree-menu-item">
+                <a href="#" class="tree-menu-link">Términos y Privacidad</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+             CyberAdventure
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="areas.html">Juega y Aprende</a></li>
+                    <li class="nav-item"><a class="nav-link" href="novedades.html">Novedades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="transmedia.html">Explora más</a></li>
+                    <li class="nav-item"><a class="nav-link" href="auth.html">Mi Cuenta</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contáctanos</a></li>
+                </ul>
+            </div>
+            <button class="btn btn-sm btn-open-menu d-lg-none float-end"><i class="fas fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <!-- ÁREAS DE JUEGO Y APRENDIZAJE -->
+    <section class="container py-5" id="areas">
+        <h2 class="section-title animate-on-scroll">Nuestras Áreas de Juego y Aprendizaje</h2>
+        <p class="text-center text-primary-light-blue mb-5 fs-5 animate-on-scroll" style="transition-delay: 0.1s;">Descubre todo lo que puedes explorar para convertirte en un ciberhéroe.</p>
+        <div class="row justify-content-center g-4">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" id="areas-ciberseguridad">
+                <div class="area-card animate-on-scroll" style="transition-delay: 0.2s;">
+                    <div class="area-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4 class="fw-bold">Ciberseguridad</h4>
+                    <p class="text-muted">Protege tus datos y aprende sobre privacidad.</p>
+                    <button class="btn btn-area-play">¡Jugar!</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" id="areas-pensamiento">
+                <div class="area-card animate-on-scroll" style="transition-delay: 0.3s;">
+                    <div class="area-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h4 class="fw-bold">Pensamiento Crítico</h4>
+                    <p class="text-muted">Diferencia lo real de lo falso en internet.</p>
+                    <button class="btn btn-area-play">¡Jugar!</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" id="areas-creatividad">
+                <div class="area-card animate-on-scroll" style="transition-delay: 0.4s;">
+                    <div class="area-icon"><i class="fas fa-palette"></i></div>
+                    <h4 class="fw-bold">Creatividad Digital</h4>
+                    <p class="text-muted">Crea historias, arte y animaciones online.</p>
+                    <button class="btn btn-area-play">¡Jugar!</button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3" id="areas-convivencia">
+                <div class="area-card animate-on-scroll" style="transition-delay: 0.5s;">
+                    <div class="area-icon"><i class="fas fa-users-line"></i></div>
+                    <h4 class="fw-bold">Convivencia Digital</h4>
+                    <p class="text-muted">Sé amable y respetuoso en tus interacciones.</p>
+                    <button class="btn btn-area-play">¡Jugar!</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5 animate-on-scroll" style="transition-delay: 0.6s;">
+            <button class="btn btn-cyber-lg">Explorar todas las aventuras <i class="fas fa-arrow-right ms-2"></i></button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="cyber-footer">
+        <div class="container py-5">
+            <div class="row justify-content-between align-items-start">
+                
+                <!-- Columna 1: Logo y Contacto -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 text-center text-md-start">
+                    <div class="footer-logo mb-3">CYBERADVENTURE</div>
+                    <ul class="list-unstyled footer-contact-info">
+                        <li><i class="fas fa-phone-alt me-2"></i> +00 123 456 789</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@cyberadventure.com</li>
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Calle Ficticia 123, Ciudad Digital</li>
+                        <li>Bogotá, Colombia</li>
+                    </ul>
+                </div>
+
+                <!-- Columna 2: Enlaces Rápidos -->
+                <div class="col-lg-2 col-md-6 mb-4 mb-lg-0 text-center text-md-start">
+                    <h5 class="fw-bold text-white mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="areas.html">Juega y Aprende</a></li>
+                        <li><a href="novedades.html">Novedades</a></li>
+                        <li><a href="transmedia.html">Explora Más</a></li>
+                        <li><a href="contacto.html">Contáctanos</a></li>
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Términos de Uso</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Redes Sociales -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-center text-md-start">
+                    <h5 class="fw-bold text-white mb-3">Síguenos</h5>
+                    <div class="social-icons-footer d-flex justify-content-center justify-content-md-start">
+                        <a href="https://www.facebook.com/share/1DDTivw6Yb/" target="_blank" aria-label="Facebook" class="social-icon-circle me-3">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/adventurecyber?utm_source=qr&igsh=Y2R1OTZ3NW5jdWk1" target="_blank" aria-label="Instagram" class="social-icon-circle me-3">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@cyber.adventure2?_t=ZS-8vOwnPwILMw&_r=1" target="_blank" aria-label="TikTok" class="social-icon-circle">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Columna 4: Newsletter -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-center text-md-start">
+                    <h5 class="fw-bold text-white mb-3">Newsletter</h5>
+                    <p class="text-white-75">Suscríbete para recibir las últimas novedades de Cyberadventure.</p>
+                    <form class="newsletter-form">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Tu nombre">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Tu correo electrónico" required>
+                        </div>
+                        <button type="submit" class="btn btn-cyber-lg">Suscribirse</button>
+                    </form>
+                </div>
+
+            </div>
+            
+            <hr class="footer-divider my-4">
+
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12 text-center text-white-75 small">
+                    <p class="mb-0">© 2025 Cyberadventure. Todos los derechos reservados.</p>
+                    <p class="mb-0 mt-1">Cyberadventure Projects S.A.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal para la imagen expandida -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0">
+                    <img src="" class="img-fluid rounded shadow-lg expanded-image" alt="Imagen de equipo expandida" id="modalImage">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
